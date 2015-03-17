@@ -1,0 +1,19 @@
+---
+# tasks file for selinux_disable
+  - name: iptable stop and disable
+    service: name=iptables state=stopped enabled=no  
+
+  - name: yum install 
+    yum: name={{ item }} state=present
+    with_items:
+      - libselinux-python
+
+  - name: selinux disable
+    selinux: state=disabled
+    notify:
+    - reboot
+    - pause
+    - wait
+    
+  - name: flush handlers
+    meta: flush_handlers

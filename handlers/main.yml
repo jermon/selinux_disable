@@ -1,0 +1,14 @@
+---
+# handlers file for selinux_disable
+
+    - name: reboot
+      command: reboot
+      
+    - name: pause
+      local_action: pause minutes=1 
+      sudo: false
+      
+    - name: wait
+      local_action: wait_for host=localhost state=started port=2222
+      sudo: false    
+
