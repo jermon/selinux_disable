@@ -1,2 +1,6 @@
 ---
 # defaults file for selinux_disable
+# Host to wait for
+waitfor_host: localhost
+waitfor_port: 2222
+
