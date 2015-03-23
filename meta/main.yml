@@ -2,7 +2,7 @@
 galaxy_info:
   author: Jerker Montelius
   description: 
-  company: -
+  company: 
   license: license (GPLv3)
   min_ansible_version: 1.2
   platforms:
