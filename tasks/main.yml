@@ -12,8 +12,8 @@
     selinux: state=disabled
     notify:
     - reboot
-    - pause
     - wait
-    
+    - pause    
+
   - name: flush handlers
     meta: flush_handlers
