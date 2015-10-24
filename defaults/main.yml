@@ -3,5 +3,5 @@
 # Host to wait for
 waitfor_host: localhost
 waitfor_port: 2222
-wait_time: 15
+wait_time: 20
 
